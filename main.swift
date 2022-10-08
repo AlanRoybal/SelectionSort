@@ -12,7 +12,6 @@ while let line = readLine() {
     var pass = 0
     var totalswaps = 0
     
-    print("Pass: \(pass), Swaps: 0/\(totalswaps), Array: \(a)")
     
     for x in 0 ..< a.count - 1 {
         var swap = 0
@@ -32,9 +31,8 @@ while let line = readLine() {
         totalswaps += 1
         swap += 1
 
-        print("Pass: \(pass), Swaps: \(swap)/\(totalswaps), Array: \(a)")
     }
     return a
 }
 
-selectionSort(words)
+print(selectionSort(words))
